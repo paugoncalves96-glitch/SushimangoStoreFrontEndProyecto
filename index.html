@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushimangostore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./estilosproyecto.css">
+</head>
+
+
+<body>
+  <!--INICIO DE LA PAG-->
+  <header class="header-pagina">
+    <img src="/Imagenes/sushimango.png">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="/Proyecto final/index.html">Inicio<i class="fa-solid fa-house"></i></a></li>
+        <li><a href="/Proyecto final/Pages/producto.html">Productos<i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="/Proyecto final/Pages/Contacto.html">Contacto<i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="/Proyecto final/Pages/Reseñas.html">Reseñas<i class="fa-solid fa-face-smile"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+  <!-- PRODUCTOS -->
+    <section id="producto">
+      <h2>Nuestros productos</h2>
+      <div class="producto-contenedor">
+  <!-- Producto 1 -->
+        <article class="producto-card">
+          <img src="../Imagenes/exo lightstick.jpg" alt="Imagen exo lightstick">
+          <div class="card-contenido">
+            <h3>EXO Lightstick ver.3</h3>
+            <p>Este producto contiene stickers comunes, holográficos e incluye una photocard al azar.</p>
+            <p class="precio">100.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+
+
+  <!-- Producto 2 -->
+        <article class="producto-card">
+          <img src="../Imagenes/Album exo.jpg" alt="Imagen album EXO">
+          <div class="card-contenido">
+            <h3>Suho 1st Mini Album: Self-portrait.</h3>
+            <p>Este albúm contiene CD, photobook, set de postales y dos photocards al azar.</p>
+            <p class="precio">50.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+
+
+  <!-- Producto 3 -->
+        <article class="producto-card">
+          <img src="../Imagenes/album exo chen 2.jpg" alt="Imagen album Chen">
+          <div class="card-contenido">
+            <h3>Chen 1st Mini Album: April & a flower.</h3>
+            <p>Este álbum contiene CD, photobook, marcapáginas y una photocard al azar.</p>
+            <p class="precio">50.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+
+
+      <!-- Producto 4 -->
+        <article class="producto-card">
+          <img src="../Imagenes/Exo love shot album.jpg" alt="Imagen album Loveshot">
+          <div class="card-contenido">
+            <h3>EXO Album LOVESHOT: Ver Love o Shot</h3>
+            <p>Este álbum contiene CD, photobook, postal y una photocard al azar.</p>
+            <p class="precio">60.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+
+
+      <!-- Producto 5 -->
+        <article class="producto-card">
+          <img src="../Imagenes/empathy album nct.jpg" alt="Imagen album Empathy">
+          <div class="card-contenido">
+            <h3>NCT 2018 Album Empathy: Ver Dream o Reality.</h3>
+            <p>Este álbum contiene CD, photobook, diary postal y una photocard al azar.</p>
+            <p class="precio">65.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+
+
+   
+      <!-- Producto 6 -->
+        <article class="producto-card">
+          <img src="../Imagenes/Jaehyun regulate ver.jpg" alt="Imagen album Jaehyun">
+          <div class="card-contenido">
+            <h3>NCT 127 Album REGULATE: Ver Jaehyun.</h3>
+            <p>Este álbum contiene CD, photobook, una carta y una photocard al azar.</p>
+            <p class="precio">70.000$</p>
+            <button class="boton">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+  <!-- VIDEOS -->
+    <section id="reseñas">
+      <h2>Reseñas</h2>
+      <div class="videos-contenedor">
+        <section class="contenedor-video">
+          <iframe src="https://www.youtube.com/embed/4rtj2R9hGFk" frameborder="0" allowfullscreen></iframe>
+          </video>
+        </section>
+        <section class="contenedor-video">
+          <iframe src="https://www.youtube.com/embed/cEanWUBzVx4" frameborder="0" allowfullscreen></iframe>
+          </video>
+        </section>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="ubicacion">
+    <h2>Contacto</h2>
+    <div class="contenedor-contacto">
+      <div id="contacto">
+        <form action="https://formspree.io/f/xovkbajl" method="POST">
+          <fieldset>
+            <div class="form-input-container">
+              <label class="input-title" for="nombre">Nombre:</label>
+              <input class="form-input" type="text" id="nombre" name="nombre">
+            </div>
+            <div class="form-input-container">
+              <label class="input-title" for="email">Correo Electrónico:</label>
+              <input class="form-input" type="email" id="email" name="email">
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="form-input-container">
+              <label class="input-title" for="mensaje">Mensaje</label>
+              <textarea class="form-input form-textarea" id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+              <button class="boton" type="submit">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+  <!-- MAPA--->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.602646408947!2d-58.43293802353041!3d-34.6142080580535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1f25622cef%3A0x499395cdc138af63!2sKeroro%20Store%20(Local%20de%20anime%20y%20de%20kpop)!5e0!3m2!1ses-419!2sar!4v1760725917177!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!--FINAL DE LA PAG-->
+  <footer class="footer--pagina">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="/Proyecto final/index.html">Inicio</a></li>
+        <li><a href="/Proyecto final/Pages/producto.html">Productos</a></li>
+        <li><a href="/Proyecto final/Pages/Contacto.html">Contacto</a></li>
+        <li><a href="/Proyecto final/Pages/Reseñas.html">Reseñas</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+<!--TABLA CLASE 3
+
+
+ <table border="1">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Email</th>
+          <th scope="col">Mensaje</th>
+          <th scope="col">Estado del mensaje</th>
+          <th scope="col">Mensajes pendientes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paula</td>
+          <td>paulag@gmailcom</td>
+          <td>Mi humilde tabla</td>
+          <td>Entregado</td>
+        </tr>
+        <tr>
+          <td>Paula</td>
+          <td>paulag.denuevo@gmailcom</td>
+          <td></td>
+          <td>Sin mensaje</td>
+        </tr>
+        <tr>
+          <td>Paula</td>
+          <td>paulag.otravez@gmailcom</td>
+          <td></td>
+          <td>Sin mensaje</td>
+        </tr>
+      </tbody>
+    </table>
+-->
+</body>
+</html>

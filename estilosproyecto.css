@@ -1,0 +1,301 @@
+header {
+    background-color: white;
+    margin: 4px;
+}
+/*Esto me lo enseñó chatgpt, luche mucho con los porcentajes*/
+body {
+    background: linear-gradient(to bottom, white 10%, wheat 40%, rgb(240, 176, 112) 100%);
+}
+
+main {
+    border: 10px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.header-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+/*Logo y navegador*/
+img {
+    height: 250px;
+    width: 250px;
+    align-items: start;
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    margin: 10px;
+    color: rgb(111, 86, 39);
+    display: flex;
+    justify-content: center;
+    font-family: "Bitter", serif;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px;
+
+}
+
+.nav-list {
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(144, 102, 53);
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+nav a:hover {
+    color: #ebc167f5;
+}
+/*Navegador footer*/
+footer{
+    background-color: inherit;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .nav-list {
+    display: flex;
+    list-style: none;
+    background-color: inherit;
+}
+
+footer nav{
+    background-color: inherit;
+}
+
+footer .nav-list a{
+    color: rgb(95, 61, 33);
+}
+.nav-list {
+    font-family: "Bitter", serif;
+    font-size: large;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/*Subtitulos y parrafos*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    font-family: "Bitter", serif;
+    font-weight: normal;
+    font-size: x-large;
+    margin-bottom:20px;
+    color: rgb(159, 119, 74);
+}
+
+h2{
+    font-size: xx-large;
+    margin-bottom: 100px;
+}
+
+p {
+    font-family: "Bitter", serif;
+    font-size: large;
+
+}
+/*Sección productos*/
+#producto 
+
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.producto-card {
+    display: flex;
+    width: 20rem;
+    border: 1px solid rgb(246, 200, 114);
+    background-color: wheat;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 40px;
+}
+
+.card-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 300px;            
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/*Sección contacto*/
+#contacto {
+    width: 50%;
+    border-radius: 10px;
+    font-family: "Bitter", "serif";
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+    padding: 25px;
+    
+}
+
+#contacto form{
+    width: 100%;
+}
+
+.contenedor-contacto{
+    display: flex;
+    background-image: url(./Imagenes/fondo\ form.jpg);
+    background-position: center;
+    padding: 50px 20px;
+    background-size: cover;
+    justify-content: space-around;
+    border-radius: 20px;
+    
+}
+
+fieldset{
+    border: 0px;
+    padding: 0px;
+}
+
+.input-title{ 
+    font-size: 20px;
+    
+}
+
+.form-input{ 
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 1px solid #d7d7d7a9;
+    height: 25px;
+}
+
+.form-textarea{
+    height: 80px;
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+/*Botones*/
+.boton{
+    color: white;
+    padding: 15px 100px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+    pointer-events: auto;
+    background-color: rgb(231, 159, 64);
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(143, 227, 94);
+    transform: translateY(-2px); 
+}
+
+/*Sección video reseñas*/
+.videos-contenedor{
+    display: flex;
+    gap: 40px;
+}
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+/*Media quaries*/
+
+@media (max-width: 650px) {
+  .producto-card {
+    padding: 20px;
+  }
+
+  #producto .producto-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .producto-card img {
+    height: 220px;
+  }
+
+  .header-pagina img {
+    height: 150px;
+    width: 150px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: x-large;
+    margin-bottom: 40px;
+  }
+
+  .videos-contenedor {
+    flex-direction: column;
+  }
+
+  .contenedor-video {
+    width: 100%;
+  }
+
+  .contenedor-video iframe {
+    height: 220px;
+  }
+}
