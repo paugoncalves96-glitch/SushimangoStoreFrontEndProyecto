@@ -180,7 +180,7 @@ p {
 
 .contenedor-contacto{
     display: flex;
-    background-image: url(./img/fondoform.jpg);
+    background-image:  url("/SushimangoStoreFrontEndProyecto/img/fondoform.jpg");
     background-position: center;
     padding: 50px 20px;
     background-size: cover;
