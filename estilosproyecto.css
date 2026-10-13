@@ -132,6 +132,7 @@ p {
 }
 
 .producto-card {
+
     display: flex;
     width: 20rem;
     border: 1px solid rgb(246, 200, 114);
@@ -141,6 +142,7 @@ p {
     padding: 40px;
     margin: 40px;
 }
+
 
 .card-contenido {
     display: flex;
@@ -254,48 +256,131 @@ fieldset{
 }
 /*Media quaries*/
 
-@media (max-width: 650px) {
-  .producto-card {
-    padding: 20px;
-  }
+@media (max-width: 600px) {
+body {
+margin: 0;
+}
 
-  #producto .producto-contenedor {
-    grid-template-columns: 1fr;
-  }
+header {
+    margin: 0;
+    padding: 10px;
+}
 
-  .producto-card img {
-    height: 220px;
-  }
+.header-pagina {
+    font-size: medium;
+}
 
-  .header-pagina img {
-    height: 150px;
-    width: 150px;
-  }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-  nav a {
-    margin-left: 0;
-  }
+.header-pagina img {
+    width: 170px;
+    height: auto;
+}
 
-  footer ul {
+header ul,
+footer ul {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 12px;
+}
+
+nav a {
+    margin-left: 0;
+    font-size: 15px;
+}
+
+nav ul {
     padding: 0;
-  }
+}
 
-  h2 {
-    font-size: x-large;
-    margin-bottom: 40px;
-  }
+main {
+    margin: 10px;
+    padding: 10px;
+}
 
-  .videos-contenedor {
-    flex-direction: column;
-  }
+h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
 
-  .contenedor-video {
+h3, h4, h5, h6 {
+    font-size: 21px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.producto-contenedor {
+    grid-template-columns: 1fr;
+
+}
+       
+  .producto-card {
+
+    width: 20rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.producto-card img {
     width: 100%;
-  }
+    height: 230px;
+    object-fit: cover;
+}
 
-  .contenedor-video iframe {
-    height: 220px;
-  }
+.contenedor-contacto {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 12px;
+    background-position: center;
+}
+
+#contacto {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+.boton {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 20px;
+}
+
+.contenedor-contacto iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+.videos-contenedor {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor-video {
+    width: 100%;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    height: 240px;
+}
+
+footer .nav-list {
+    padding: 10px 0;
+    gap: 10px;
+}
 }
