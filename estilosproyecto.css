@@ -180,7 +180,7 @@ p {
 
 .contenedor-contacto{
     display: flex;
-    background-image: url(./Imagenes/fondo\ form.jpg);
+    background-image: url(./img/fondo\ form.jpg);
     background-position: center;
     padding: 50px 20px;
     background-size: cover;
